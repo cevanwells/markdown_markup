@@ -9,10 +9,11 @@ Author email: cevan@wells.io
 Source code: https://github.com/cevanwells/markdown_markup
 */
 
-require_once(dirname(__FILE__) . '/php-markdown/Michelf/Markdown.inc.php');
+require_once(dirname(__FILE__) . '/markdown_markup/Michelf/Markdown.inc.php');
+use Michelf\Markdown as Markdown;
 
 # get the correct ID for the plugin
-$thisFile = basename(__FILE__), ".php");
+$thisFile = basename(__FILE__, ".php");
 
 # register the plugin
 register_plugin(
@@ -33,3 +34,4 @@ add_filter('content', 'parse_content');
 function parse_content($content) {
   return Markdown::defaultTransform($content);
 }
+?>

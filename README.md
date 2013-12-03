@@ -1,11 +1,20 @@
-# GetSimple Markdown Parser
+GetSimple Markdown Parser
+=========================
 
-This plugin will allow you to write your posts in the Markdown markup syntax and have them converted to valid HTML.
+This plugin will allow you to write your posts in the Markdown markup syntax and have them converted to valid HTML automatically.
 
-## Credit
-I did not create the Markdown syntax nor did I write the parser itself. I have only put existing tools together in such a way as to allow them to be useful for the GetSimple community.
+Credit
+------
+
+As described in the LICENSE.md file, the original Markdown syntax and perl tool were created by John Gruber. John obviously retains the rights to his work and my appreciation for a neat way to write readable and formatted plain text.
+
+As mentioned, the original tool was written in perl. I probably could have made the perl tool work from within a PHP plugin, but there was already an awesome PHP port of the tool by Michel Fortin. Thank you!
+
+Since this is my first GetSimple plugin I needed a bit of direction for how to package the plugin. I used the [Creole wiki markup](https://github.com/vurdalakov/creole_markup) plugin as a guide and I am quite happy with the results. Thank you, [vurdalakov](mailto:vurdalakov@gmail.com)
 
 ## Contributing
+
+If you see a bug you would like to squash, please feel free. I really didn't do much to put this together, so there is either no room for error (on my part), or a bunch of stuff I missed. Thank you for your patience.
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)

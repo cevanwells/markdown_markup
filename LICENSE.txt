@@ -1,4 +1,4 @@
-Copyright (c) 2013, Chris Wells <reckless@wells.io>
+Copyright (c) 2013, Chris Wells <cevan@wells.io>
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without 

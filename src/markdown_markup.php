@@ -9,10 +9,14 @@ Author email: cevan@wells.io
 Source code: https://github.com/cevanwells/markdown_markup
 */
 
+# load the required library. I'm not using the autoloader as recommended
+# in the library. Oh well.
 require_once(dirname(__FILE__) . '/markdown_markup/Michelf/Markdown.inc.php');
 use Michelf\Markdown as Markdown;
 
 # get the correct ID for the plugin
+# this is apparently needed, although I'm not sure if it does much
+# more than grab the actual name of the file being used as a plugin.
 $thisFile = basename(__FILE__, ".php");
 
 # register the plugin
